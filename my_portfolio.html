@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Singhal</title>
+    <style>
+
+        *{
+            margin : 0px;
+            padding : 0px;
+            box-sizing: border-box;
+            font-family: 'poppins';
+        }
+
+        body{
+            background : #081b29 ;
+        }
+
+        header{
+            position : fixed;
+            top : 0;
+            width: 100%;
+            height : 75px;
+            display : flex ;
+            z-index: 100;
+            padding : 20px 30px;
+            justify-content: space-between;
+            
+        }   
+        .section {
+            display : flex;
+        }
+        .logo{
+            font-size: 25px;
+            color : #ededed;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .navbar a{
+            font-size: 18px;
+            color : #ededed;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 35px;
+            transition: .3s;
+        }
+
+        .navbar a:hover , .navbar a:first-child{
+            color : rgb(76, 212, 212);
+        }
+
+        .content {
+            
+            display : flex ;
+            height : 80vh ;
+           align-items: center;
+           max-width: 50%;
+           margin : 30px ;
+           padding : 30px;
+        }
+
+        .content img{
+            position: fixed; /* or absolute if you want it relative to a parent container */
+            top: 50%; /* Adjust as needed */
+            right:5%;
+            transform: translateY(-50%);
+            border : 2px solid #00abf0 ;
+            /* box-shadow: 4px 4px 10px rgba(0,0,0,.3) ; */
+            box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.7) inset;
+            padding : 5px;
+        }
+
+        .content-box h1{
+            font-family: 'Pacifico';
+            font-size : 45px;
+            letter-spacing : 2px;
+            color : whitesmoke;
+            line-height : 1.5;
+            justify-content: center;
+            font-weight: 1000;
+
+        }
+        .content-box h3 {
+            font-family: 'Pacifico';
+            font-size : 20px;
+            letter-spacing : 2px;
+            color : #00abf0;
+            line-height : 1.5;
+            justify-content: center;
+            font-weight: 500;
+
+        }
+
+        .content-box p {
+            text-align : left;
+            font-size: 16px ;
+            font-family: 'Pacifico';
+            color : whitesmoke;
+        }
+
+        .button-box {
+            display : flex;
+            width : 345px;
+            height : 50px;
+            margin : 25px;
+            justify-content: space-between;
+        }
+
+        .button-box a {
+            display : inline-flex;
+            align-items: center;
+            justify-content: center;
+            width : 150px;
+            height : 100%;
+            background : #00abf0;
+            border: 2px solid #00abf0;
+            border-radius: 8px;
+            font-size: 19px;
+            color: d;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            position: relative ;
+
+        }
+
+        .home-sci{
+            position: absolute;
+            bottom : 50px ;
+            width : 170px ;
+            display : flex;
+            justify-content: space-between;
+
+        }
+
+        .home-sci a {
+            background : transparent;
+            /* border: 2px solid #00abf0; */
+            border-radius: 50% ;
+            height:50px ;
+            width: 50px ;
+            display: inline-flex;
+            text-decoration: none;
+            justify-content:center;
+            font-size: 20px;
+            align-items: cener;
+            color :#00abf0;
+            position : relative;
+            z-index: 1;
+        }
+
+        .home-sci a:hover {
+            color : whitesmoke;
+        }
+
+
+        
+
+
+
+
+    </style>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class = "logo">Yash.</a>
+
+        <nav class = "navbar">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">services</a>
+            <a href="#">portfolio</a>
+            <a href="#">contact</a>
+        </nav>
+
+       
+    </header>
+     <section class = "content">
+            <div class = "content-box">
+                <h1>Hi, I'm Yash Singhal</h1>
+                <h3> A Web Developer and Machine Learning Expert</h3>
+                <p>
+                     <br>I am currently a B.Tech (CSE) 2nd year undergrad from KIET Group of Institutions, GZB .I am highly enthusiast for exploring new technologies , my area of interest are web development , machine learning , linux , open source , I am proficient in python , java , c , programming language .
+                </p>
+                
+                <div class = "button-box">
+                    <a href="#">hire me</a>
+                    <a href="#">connect</a>
+                </div>
+               
+
+                <div class = "home-sci">
+                    <a href=""><i class='bx bxl-linkedin'></i></a>
+                    <a href=""><i class='bx bxl-twitter' ></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+    
+            </div>
+            <img src="Screenshot from 2024-05-09 07-01-58.png" alt="">
+            
+        </section>
+
+
+</body>
+</html>
